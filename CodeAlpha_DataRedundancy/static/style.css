@@ -1,0 +1,33 @@
+body{
+    background-color:#f4f6f9;
+}
+
+.card{
+    border-radius:5px;
+}
+
+.card-shadow{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mt-4{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn{
+     border-radius:2.5px;
+}
+
+h2{
+    text-align: center;
+}

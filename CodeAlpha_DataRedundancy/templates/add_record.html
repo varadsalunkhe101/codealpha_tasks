@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Record</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='bootstrap.min.css') }}">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='bootstrap-icons.min.css') }}">
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+    <div class="card-header">
+        <h2 class="text-center">
+            <i class="bi bi-database-check me-2">Data Redundancy Removal System</i>
+        </h2>
+    </div>
+    <div class="card shadow">
+        <div class="card-body">
+
+            {% if message %}
+            <div class="alert alert-{{ alert_type }}">
+                {{ message }}
+            </div>
+            {% endif %}
+
+            <form method="POST">
+
+                <div class="mb-3">
+                    <label>Name</label>
+                    <input
+                            type="text"
+                            name="name"
+                            class="form-control"
+                            required>
+                </div>
+
+                <div class="mb-3">
+                    <label>Email</label>
+                    <input
+                            type="email"
+                            name="email"
+                            class="form-control"
+                            required>
+                </div>
+
+                <div class="mb-3">
+                    <label>Phone</label>
+                    <input
+                            type="text"
+                            name="phone"
+                            class="form-control"
+                            required>
+                </div>
+
+                <div class="btns">
+                    <button class="btn btn-success w-25">
+                        <i class="bi bi-plus-circle mt-2">Add Record</i>
+                    </button>
+
+                    <a href="/records"
+                       class="btn btn-primary w-25">
+                        <i class="bi bi-eye mt-2">Records</i>
+                    </a>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='bootstrap.bundle.min.js') }}"></script>
+
+</body>
+</html>

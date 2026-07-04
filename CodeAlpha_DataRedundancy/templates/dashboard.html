@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='bootstrap.min.css') }}">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet"
+      href="{{ url_for('static', filename='bootstrap-icons.min.css') }}">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">
+        <i class="bi-speedometer2 mt-4">Dashboard Analytics</i>
+    </h2>
+
+    <div class="row">
+
+        <div class="col-md-3 mb-3">
+            <div class="card text-center shadow">
+                <div class="card-body">
+                    <h5><i class="bi bi-database mt-4">Total Records</i></h5>
+                    <h1>{{ total_records }}</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="card text-center shadow">
+                <div class="card-body">
+                    <h5><i class="bi bi-exclamation-triangle mt-4">Duplicate Attempts</i></h5>
+                    <h1>{{ total_duplicates }}</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="card text-center shadow">
+                <div class="card-body">
+                    <h5><i class="bi bi-envelope-exclamation mt-4">Duplicate Emails</i></h5>
+                    <h1>{{ duplicate_emails }}</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="card text-center shadow">
+                <div class="card-body">
+                    <h5><i class="bi bi-telephone-x mt-4">Duplicate Phones</i></h5>
+                    <h1>{{ duplicate_phones }}</h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="mt-4">
+
+        <a href="/" class="btn btn-primary w-25">
+            <i class="bi bi-plus-circle mt-2">Add Record</i>
+        </a>
+
+        <a href="/records" class="btn btn-success w-25">
+            <i class="bi bi-eye mt-2">Records</i>
+        </a>
+
+        <a href="/logs" class="btn btn-warning w-25">
+            <i class="bi bi-files mt-2">Duplicate Logs</i>
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
