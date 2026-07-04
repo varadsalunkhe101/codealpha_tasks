@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart College Information Chatbot</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='icons/bootstrap-icons.min.css') }}">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+</head>
+<body>
+
+<div class="container-fluid vh-100">
+
+    <div class="row h-100 justify-content-center align-items-center">
+
+        <div class="col-lg-5 col-md-8 col-sm-11">
+
+            <div class="chat-container">
+
+                <!-- Header -->
+                <div class="chat-header">
+
+                    <div class="d-flex justify-content-between align-items-center">
+
+                        <div class="d-flex align-items-center">
+
+                            <div class="logo-box">
+                                <i class="bi bi-mortarboard-fill"></i>
+                            </div>
+
+                            <div class="ms-3">
+                                <h4 class="mb-0">Your`s Assistant</h4>
+                                <small>Student Help Desk</small>
+                            </div>
+
+                        </div>
+
+                        <div class="text-end">
+
+                            <div class="online-status">
+                                <span class="status-dot"></span>
+                                Online
+                            </div>
+
+                            <button
+                                class="btn btn-sm btn-light mt-2"
+                                id="clearChatBtn"
+                            >
+                                <i class="bi bi-trash3"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Chat Area -->
+                <div class="chat-box" id="chatBox">
+
+                    <div class="message bot-message">
+
+                        <div class="message-content">
+
+                            <i class="bi bi-robot me-2"></i>
+
+                            <strong>Welcome!</strong> 👋
+
+                            <br><br>
+
+                            I can help you with:
+
+                            <ul class="mt-2 mb-0">
+                                <li>Admission Process</li>
+                                <li>Courses Offered</li>
+                                <li>Fee Structure</li>
+                                <li>Placements</li>
+                                <li>Scholarships</li>
+                                <li>Hostel Facilities</li>
+                                <li>Library Information</li>
+                                <li>Contact Details</li>
+                            </ul>
+
+                            <br>
+
+                            Ask me a question or select a quick option below.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="quick-actions px-3 py-2">
+
+                    <button class="btn btn-outline-primary btn-sm quick-btn">
+                        admission
+                    </button>
+
+                    <button class="btn btn-outline-primary btn-sm quick-btn">
+                        courses
+                    </button>
+
+                    <button class="btn btn-outline-primary btn-sm quick-btn">
+                        fees
+                    </button>
+
+                    <button class="btn btn-outline-primary btn-sm quick-btn">
+                        placements
+                    </button>
+
+                    <button class="btn btn-outline-primary btn-sm quick-btn">
+                        scholarship
+                    </button>
+
+                    <button class="btn btn-outline-primary btn-sm quick-btn">
+                        hostel
+                    </button>
+
+                </div>
+
+                <!-- Input -->
+                <div class="chat-input">
+
+                    <div class="input-group">
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="userInput"
+                            placeholder="Type your question here..."
+                            autocomplete="off"
+                        >
+
+                        <button
+                            class="btn btn-primary"
+                            id="sendBtn"
+                        >
+                            <i class="bi bi-send-fill"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Footer -->
+                <div class="text-center py-2 border-top bg-light">
+
+                    <small class="text-muted">
+                        Your`s College Chatbot
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+
+<!-- Custom JS -->
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

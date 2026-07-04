@@ -1,0 +1,44 @@
+{
+  "intents": [
+    {
+      "patterns": ["hello", "hi", "hey"],
+      "response": "Hello! Welcome to Your College. How may I assist you today?"
+    },
+    {
+      "patterns": ["admission", "admission process", "how to get admission"],
+      "response": "Admissions are based on entrance exam scores aka MHT CET and eligibility criteria. Please visit the admission office for details."
+    },
+    {
+      "patterns": ["courses", "courses offered", "available courses"],
+      "response": "We offer Civil Engineering, Computer Science Engineering, Artificial Intelligence and Data Science,Mechanical Engineering, Electrical Engineering, and Electronics and Computer Engineering."
+    },
+    {
+      "patterns": ["fees", "fee structure", "college fees"],
+      "response": "The fee structure varies by Category and Admission Year FY/DSY and Academic Performance. Please contact the accounts department for the latest details."
+    },
+    {
+      "patterns": ["placements", "placement statistics", "campus placements"],
+      "response": "Our college provides placement assistance and conducts campus recruitment drives every year."
+    },
+    {
+      "patterns": ["scholarship", "scholarships available"],
+      "response": "Government and merit-based scholarships are available for eligible students as per there category and Academic Performances."
+    },
+    {
+      "patterns": ["hostel", "hostel facility", "accommodation"],
+      "response": "Separate hostel facilities are available for boys and girls."
+    },
+    {
+      "patterns": ["library", "library facility"],
+      "response": "Our library contains thousands of books, journals, and digital learning resources."
+    },
+    {
+      "patterns": ["contact", "phone number", "email"],
+      "response": "You can contact the college administration at info@Yourscollege.edu."
+    },
+    {
+      "patterns": ["bye", "goodbye"],
+      "response": "Thank you for visiting. Have a great day!"
+    }
+  ]
+}
